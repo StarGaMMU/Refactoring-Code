@@ -1,0 +1,25 @@
+#1 introduced Enum in place of str to bound the options of role thus reduce strength
+
+#2 removed duplicate code for finding each role with a find_employee method
+
+#3 list comprehension removed excess line of code in find method with a single line
+
+#4 rename to meaningful variables such as hours_worked and hourly_rate_dollars
+
+#5 removed isinstance within Company class (which creates further dependency within subclass and coupling)
+#with pay method in each Salariedemp and hourlyemp and add pay method as abstract class in Employee to be called by both sal and houremp
+
+#6 separated payou_holiday and normal holidey fun to reduce cohesion and better understanding
+
+#7 ignoring exceptions is a badsmell thus removed it
+
+#8 instead of generic existing error make a customerror class to handle errors
+
+
+changes in chat
+
+# Consolidated the holiday payout and single holiday methods into the Employee class.
+# Simplified the Company class by combining the find methods into a single find_employees_by_role method.
+# Removed unnecessary exception handling.
+# Standardized role comparisons to be case-insensitive.
+# Improved method and variable naming for clarity.
